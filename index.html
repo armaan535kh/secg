@@ -1,35 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - 3D Rotating Gallery</title>
+  <title>Freshers 2024 Sec-G BTech (IT)</title>
   <link rel="stylesheet" href="./style.css">
-
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="gallery">
-  <span style="--i:1">
-    <img src="images/im1.jpeg" alt="" />
-  </span>
-  <span style="--i:2">
-    <img src="images/im2.jpeg" alt="" />
-  </span>
-  <span style="--i:3">
-    <img src="images/im3.jpeg" alt="" />
-  </span>
-  <span style="--i:4">
-    <img src="images/im4.jpeg" alt="" />
-  </span>
-  <span style="--i:5">
-    <img src="images/im5.jpeg" alt="" />
-  </span>
-  <span style="--i:6">
-    <img src="images/im6.jpeg" alt="" />
-  </span>
-  
-</div>
-<!-- partial -->
-  
+  <!-- Add the title in your HTML -->
+  <h1 class="title">Freshers 2024 Sec-G BTech (IT)</h1>
+
+  <!-- Image gallery -->
+  <div class="gallery">
+    <span style="--i:1"><img src="images/im1.jpeg" alt="" onclick="showImage(this)" /></span>
+    <span style="--i:2"><img src="images/im2.jpeg" alt="" onclick="showImage(this)" /></span>
+    <span style="--i:3"><img src="images/im3.jpeg" alt="" onclick="showImage(this)" /></span>
+    <span style="--i:4"><img src="images/im4.jpeg" alt="" onclick="showImage(this)" /></span>
+    <span style="--i:5"><img src="images/im5.jpeg" alt="" onclick="showImage(this)" /></span>
+    <span style="--i:6"><img src="images/im6.jpeg" alt="" onclick="showImage(this)" /></span>
+  </div>
+
+  <!-- Modal for viewing the image -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close" onclick="closeModal()">×</span>
+    <img id="modalImage" src="" alt="" />
+  </div>
+
+  <!-- Instruction text -->
+  <p class="instruction">by - Armaan Khan</p>
+
+  <script src="script.js"></script>
 </body>
 </html>
